@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Úvod do html</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="obal">
+
+    <h1>Úvod do tématu</h1>
+
+    <h2>Co to je HTML</h2>
+
+    <p>HTML je <mark>odkazovací značkovací jazyk</mark> pro tvorbu webových stránek. HTML značky (tagy) v html dokumentu
+      vyznačují, která část textu je nadpisem, která normálním odstavcem nebo <a href="#">hypertextovým odkazem</a>,
+      vyznačují místo, kam má být umístěn obrázek či video, apod.
+    </p>
+
+    <p>Značky jsou obvykle <strong>párové</strong>, přičemž koncová značka je shodná se značkou počáteční, jen má před
+      názvem znak lomítko (např. html, head, body, h1, h2, p, a, ul, ol, div). Některé značky jsou
+      <strong>nepárové</strong> - nemají žádný obsah a nepoužívají koncovou značku (např. hr, br, img, meta, link).
+    </p>
+
+    <h3>Klíčové vlastnosti jazyka</h3>
+
+    <ul>
+      <li>Webový prohlížeč ignoruje nadbytečné mezery v textu (zůstane jen jedna)</li>
+      <li>Enterem nejde odřádkovat (k tomu je CSS)</li>
+      <li>Webový prohlížeč ignoruje vše co nezná (přeskočí to)</li>
+      <li>Veškerý text musí být umístěn v nějaké značce</li>
+    </ul>
+
+    <p>
+      Některé značky obsahují tzv. <strong>atributy</strong> a jejich <strong>hodnoty</strong>.
+    </p>
+
+    <pre>
+    &lt;a href="cil odkazu"&gt;co je klikatelné&lt;/a&gt;
+    &lt;img src="obrazek.jpg"&gt;
+    </pre>
+
+    <p>
+      <a href="https://youtu.be/mzPxo7Y6JyA?si=m4_A3gX0d6o4Ba3b">Video o histori HTML</a>
+    </p>
+
+    <h2>Co to je CSS</h2>
+
+    <p>
+      CSS jsou kaskádové styly, pomocí nichž určujeme <mark>vzhled webových stránek</mark>. Definujeme styly pro
+      nadpisy, odstavce, odkazy či obrázky, ale i pro jednotlivé bloky webové
+      stránky.
+    </p>
+
+    <p>Definice kaskádových stylů sestává z několika pravidel. Každé pravidlo obsahuje <strong>selektor</strong> a blok
+      deklarací uzavřený ve složených závorkách <code>{}</code>. Každý blok deklarací pak obsahuje deklarace oddělené
+      <code>;</code> (středníky) a
+      každá deklarace sestává z <strong>vlastnosti</strong>, následuje <code>:</code> (dvojtečka) a její
+      <strong>hodnoty</strong>.
+    </p>
+
+    <pre>
+    selektor {
+      vlastnost: hodnota;
+      vlastnost: hodnota;
+    }
+    </pre>
+
+    <h2>Propojení HTML a CSS</h2>
+
+    <p>Web je složen z řady html stránek, které mají stejný vzhled. Tento vzhled je vytvořen pomocí stylů zapsaných v
+      jednom společném CSS souboru. Ve všech HTML stránkách je pak uvedeno propojení (link) na tento CSS soubor.
+    </p>
+
+    <p>Díky tomu mají stránky jednotný vzhled a každá změna stylu v css souboru se projeví ve všech html stránkách,
+      které jsou s tímto css souborem propojeny.
+    </p>
+
+    <h2>Studijní zdroj</h2>
+
+    <p><a href="https://www.w3schools.com/" target="_blank">www.w3schools.com</a></p>
+
+    <h2>Shrnutí</h2>
+
+    <img src="https://edumach.cz/img/html-css.png" alt="Vztah HTML a CSS" title="Vztah HTML a CSS">
+
+    <ul>
+      <li>Pomocí HTML definujeme význam elementů: Nadpis, odstavec, odkaz, obrázek… a samozřejmě jejich pořadí na
+        stránce (jako v klasickém dokumentu).</li>
+      <li>Pomocí CSS definujeme vzhled elementů: Nadpis bude zarovnaný na střed, odstavec bude červeným písmem, odkaz
+        nebude podtržený, obrázek bude odsazený shora o 20px…</li>
+    </ul>
+
+    <p>Neplatí absolutně a vždy. Jako všude i zde najdete sem tam nějaké ty výjimky.</p>
+
+  </div>
+
+</body>
+
+</html>
